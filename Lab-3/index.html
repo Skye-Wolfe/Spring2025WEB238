@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="CJW" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="CSS/colorbox.css" type="text/css">
+        <script type="text/javascript" src="JS/jquery-3.7.1.js"></script>
+        <script type="text/javascript" src="JS/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="JS/onyx.js"></script>
+        <title>Onyx PC</title>
+    </head>
+    <body>
+        <button id="topBtn" title="Go to top">Top</button>
+       
+        <div class="topnav">
+            <a href="#About" class="active">Onyx</a>
+            <div id="myLinks">
+                <a href="#Case">Case</a>
+                <a href="#Motherboard">Motherboard</a>
+                <a href="#CPU">CPU</a>
+                <a href="#CPU-Cooler">CPU Cooler</a>
+                <a href="#GPU">Graphics Card</a>
+                <a href="#PSU">Power Supply</a>
+                <a href="#RAM">RAM</a>
+                <a href="#SSD">SSD</a>
+                <a href="#Other">Other</a>
+            </div>
+            <a href="javascript:void(0);" id="icon" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <main>
+            <div class="about" id="About">
+                <h1>About Onyx</h1>
+                <p>
+                    Onyx is a mid range AM5 mini ITX computer. All parts have been hand chosen to give the best price to
+                    perfomance without compromizing in apperance and with room to upgrade in the future. Although it is
+                    a small form factor build it packs more than enough perfomance to play any game. The upside of SFF
+                    (small form factor) builds is obviously the size and portability. This usualy comes with the
+                    negatives of limited performance and higher prices. Onyx minimizes these downsideds by being able to
+                    support a 240mm all in one liquid cooler and a full size graphics card while maintaining the small
+                    footprint while keeping the price resonable. The part total comes to just under $1,500 before tax
+                    going any lower would compromize perfomance, asthetics, and upgrablity. Many hours went in to
+                    reserching and planing this build to make sure each and every part was the best value.
+                </p>
+            </div>
+            <div class="parts" id="Case">
+                <img src="ASSETS/Lian_Li_A4-H20_Main.jpg" alt="Lian Li A4-H20 Case Exterior" />
+                <div class="parts-text">
+                    <h1>The Case</h1>
+                    <p>
+                        For Onyx the Lian Li A4-H20 was chosen as the case. It is an 11L case with a footprint of 5.51" by
+                        12.83" and I hight of 9.61". This is not the smalest case out there but that's because it can fit a
+                        240mm aio (all in one) liquid cooler and up to a 322mm graphics card. This is important for Onyx
+                        because it makes it so we don't have to compromize on our CPU or graphics card. It is also
+                        compatible with SFX or SFX-L power supplies. It has a sandwitch layout meaning there is a divider in
+                        the center of the case that seperates the graphics card and motherboard. This helps with making the
+                        case have a lower footprint by removing unused space. It also puts the graphics card fans right up
+                        against the mesh side pannel for maximum airflow. Becuse the graphics card is seperate from the
+                        motherboard a riser cable is used. Along with all these practical benifits of the case it also has a
+                        clean minimalist asthetic with an angular front io cuttout. The rest of the build contiues this
+                        design language to create not only a powerful but beautiful computer.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="Motherboard">
+                <img
+                    src="ASSETS/ASRock_B850I_Lightning_WiFi_Main.png"
+                    alt="ASRock B850I Lightning WiFi Motherboard With Box and Antena" />
+                <div class="parts-text">
+                    <h1>The Motherboard</h1>
+                    <p>
+                        The motherbord chosen for Onyx is the ASRock B850I Lightning WiFi. The ASUS ROG Strix B650E-I Gaming
+                        WiFi was also considered but currently is $40 more expensive and the B650 boards are being
+                        discontiued and would need a BIOS update for newer CPUs. The ASRock B850I has 2.5g ethernet as well
+                        as WiFi 6E so wether you are on the go or at home you will have blazing fast internet. For back USB
+                        connections it has one USB 3.2 Gen2 Type-C that functions as a display port, it also has 2 USB 3.2
+                        Gen2 Type-A ports, 1 USB 3.2 Gen1 Type-A, and 4 USB 2.0 Type-A. The USB connections on the back
+                        could be better but for the majority of gamers it's good enough. The display port USB Type-C is
+                        perfect for a secondary monitor, The two USB 3.2 Gen2 Type A ports are perfect for the mouse and
+                        keyboard while the 3.2 Gen1 is great for a microphone. The 4 USB 2.0 ports can be used for whatever
+                        else is needed. Along with the back USB connections it has all the connections we need for the front
+                        IO on the case. Another main reason this motherboard was chosen was for the back SPDIF port, this
+                        allows for the connection of an audio DAC for much higher quality audio. Like most modern
+                        motherboards it has a BIOS Flackback button for if you need to update your BIOS. For the PCIe slot
+                        it is 5.0 x16 so it supports all current gen graphics cards. It also has 1 M.2 Gen5x4 on the front
+                        with a heatshield and a M.2 Gen4x4 on the back for extra storage. For RAM it has 2 DDR5 slots that
+                        can support up to 128gb and 8200mh which is more than enough. Overall it is the cheapest newest gen
+                        mini ITX motherboard with all the connections needed.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="CPU">
+                <img src="ASSETS/AMD_Ryzen_5_9600x_Main.jpg" alt="AMD Ryzen 5 9600x in Box" />
+                <div class="parts-text">
+                    <h1>The CPU</h1>
+                    <p>
+                        As a CPU for Onyx the AMD Ryzen 5 9600x was chosen. AMD was chosen over Intel becuss currently there
+                        have been many issues with Intel CPUs and AMD is usualy better price to performance. Also AMD has
+                        better future prospects, they contiue to release AM4 CPUs 9 years after it's release so the AM5
+                        socket will likely be supported for years to come. Ryzen 5 was chosen over 7 or 9 because the extra
+                        cores from those higher end CPUs are not needed unless you need it for productivity work or
+                        streaming. There is little to no benifit in games unless you get an x3d CPU but those are outside
+                        the budget of this build. Currently the 9000 series of CPUs are the newest from AMD and the 9600x is
+                        about the same price as the previous generation 7600x, the 9600x also has a lower wattage meaning
+                        lower temps which is good for ITX builds. It has great value for the price while being strong enough
+                        to not bottleneck our GPU and power efficent so we don't have to worry about thermal throttling all
+                        with the ability to upgrade later with the AM5 socket.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="CPU-Cooler">
+                <img
+                    src="ASSETS/ID-COOLING_FROSTFLOW_X_240mm_AIO_Main.jpg"
+                    alt="ID-COOLING FROSTFLOW X 240mm AIO Cooler" />
+                <div class="parts-text">
+                    <h1>The CPU Cooler</h1>
+                    <p>
+                        To cool our CPU the ID-COOLING FROSTFLOW X 240mm AIO was picked. Altough our CPU could do just fine
+                        with a low profile air cooler the case is built around liquid cooling and better cooling is always a
+                        good thing along with in the future if upgrading the CPU a new cooler would not be needed. The
+                        FROSTFLOW X was chosen in particualr because it is already know to fit in the case as well as
+                        perform great. There are more expensive AIO coolers on the market but the slightly better
+                        performance is not worth the price especialy because an AIO is already more than enought for the CPU
+                        we chose and can support more powerful ones also if we do upgrade. The asthetics of the cooler also
+                        fit Onyx, with a clean black design with subtle white LED glow on the pump head that will match the
+                        white led glow of our GPU. Another benifit of using the AIO is the fans can be tuned down to be much
+                        quieter than an air cooler and sill never thermal throttle the CPU. Overall this cooler offers more
+                        than enough performance for the current CPU and future ones while also perfectly fitting the
+                        asthetics of Onyx.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="GPU">
+                <img
+                    src="ASSETS/XFX_SWIFT_Radion_RX_9060XT_16gb_Main.jpg"
+                    alt="XFX SWIFT Radion RX 9060XT 16gb With Box" />
+                <div class="parts-text">
+                    <h1>The Graphics Card (GPU)</h1>
+                    <p>
+                        For Onyx the GPU chosen is the XFX SWIFT Radion RX 9060XT 16gb. When chosing a GPU the main Choice
+                        is between AMD and Nvidia, there are starting to be more options but they are still in their
+                        infancy. For Onyx AMD was the better fit, they consitantly have better price to performance than
+                        Nvidia. Nvidida has it's own benifits though with raytracing and DLSS along with being better for
+                        content creators but for Onyx price to performance was valued more. The Nvidia equivialnt to the GPU
+                        we picked is $50 more for the same performance which was considered a waste of money. Of the AMD
+                        GPUs the RX 9060 XT 16gb was chosen for multiple resons, one of wich being it is the newest
+                        generation with the newest technology including better raytracing further making it the better value
+                        over Nvidia. The 9060xt is the lowest end card from the new generation but that doen't mean it is
+                        weak, it is a solid 1440p gaming card that can run all modern games well. There are two options for
+                        the 9060 XT one with 8gb of vram and one with 16b, the 16gb was chosen because modern games require
+                        more and more vram so 12-16gb is considered the lowest you should go unless you only plan on playing
+                        older titles. The 9060 XT also offers insane value for it's price to the point where in many
+                        situations it beats used GPUs on price to performance. The XFX SWIFT was chozen as the specific
+                        model because not only is it one of the cheapest options for the 9060 XT without any lower
+                        performance or cooling but it also matches the asthetics of Onyx. Like the CPU cooler it has a clean
+                        all black design with subtle white led accents. The XFX Mercury model was also considered because
+                        for a while it was only $10-20 more for much better thermals but the price has risen recently to the
+                        point where it is almost $40 more so it is no longer worth it. Another important thing to consider
+                        when chosing a GPU and especaly with ITX is if it fits in the case and the XFX SWIFT fits perfectly.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="PSU">
+                <img
+                    src="ASSETS/Cooler_Master_V750_SFX_GOLD_750W_PSU_Main.jpg"
+                    alt="Cooler Master V750 SFX GOLD 750W Power Supply" />
+                <div class="parts-text">
+                    <h1>The Power Supply Unit (PSU)</h1>
+                    <p>
+                        Chosing the right power supply can be difficult because the brand or rating matters much less than
+                        the actual internals of the PSU. Because of this the PC building community have put together a tier
+                        list that rates all the power supplies and give them a rating so this list was used to pick the
+                        Cooler Master V750 SFX GOLD 750W as the power supply for Onyx. The PSU is rated A tier on the list
+                        and is at a very resonable price for an SFX PSU. It is 80 Plus Gold certified which is pretty
+                        standard, you can get higher effiency but for the majoraty of people and builds 80 Plus Gold is
+                        perfect and going to a higher efficiency is a waste of money. The case we have for Onyx can support
+                        SFX or SFX-L PSUs but everyone advises against the SFX-L units because they are slightly larger
+                        leaving less room for cables managment in the already small case. For wattage 750 was chosen, it is
+                        more that what is required for our build we could get away with a 600W but there are a couple of
+                        reasons 750 was picked. Firstly there are very few 600W PSUs that are in the SFX form factor, and
+                        they usualy cost the same if not more than the 750W PSUs so there's no reason not to go for the
+                        higher wattage. Also 750W leaves room for upgrading componets to more powerful ones that require
+                        more power without having to buy a new PSU. For asthetics most PSUs look about the same but the one
+                        chosen for Onyx is all black. It does have the benifit of having unsleaved cables meaning they are
+                        much more flexable which will help in our build with the size constraints, along with the PSU being
+                        modular meaning no unneeded cables. It is the perfect blend of price to performance with added
+                        functionality for the Onyx build.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="RAM">
+                <img
+                    src="ASSETS/Patriot_Viper_Elite_5_Ultra_DDR5-6000_CL28_RAM_Main.png"
+                    alt="Patriot Viper Elite 5 Ultra DDR5-6000 CL28 RAM Side View" />
+                <div class="parts-text">
+                    <h1>The Random Access Memory (RAM)</h1>
+                    <p>
+                        For the RAM in an AM5 build the DDR5-6000 CL30 is considered the best price to perfomance, and for
+                        ammount two 16gb sticks for a total of 32gb is considered what you need unless video editing or
+                        other production jobs. The lower priced RAM that fit this requirement start at around $100, while
+                        looking for the best fit for Onyx the Patriot Viper Elite 5 Ultra stood out. It is close to the
+                        lower price at $110 but it is actualy CL28 which are usualy $130+ so for about the same price as
+                        CL30 we can get better performance. Also at this time this exact ram was used in a world record
+                        overclocked build by Linus Tech Tips, so if you wanted to push this memory you can. Along with the
+                        amazing performance for the price it's asthetics are great, all black with an angled corner and
+                        white text with logo making a very clean look. One unique thing that you have to think about with an
+                        ITX build for ram is the hight of the ram getting in the way of the CPU cooler. The Viper Elite 5
+                        Ultra is not the shortest ram at 44mm tall but it is short enough for the build because we are using
+                        an AIO and can route the tubes around or over them, also other builds in the case use similar height
+                        ram so it is a confirmed fit. The Viper Elite 5 Ultra is the perfect RAM for Onyx in price,
+                        performance, and athetics.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="SSD">
+                <img src="ASSETS/KingSpeck_XG7000_Main.jpg" alt="KingSpeck XG7000 M.2 SSD" />
+                <div class="parts-text">
+                    <h1>The Solid State Drive (SSD)</h1>
+                    <p>
+                        For Onyx a PCIe 4.0 x4 NVME SSD was chosen as the storage. SSDs offer much better speeds than a hard
+                        drive, also a hard drive would not fit in most SFF builds. A SATA SSD is also an option with the
+                        case having room for one at the bottom but they roughly the same price as an NVME and have worse
+                        speeds. NVME 4.0 was picked over NVME 5.0 because although they have better speeds it makes very
+                        little to no differance in gaming, they are also much more expensive and run hotter than PCIE 4.0
+                        usualy requiring a large heatsink or even one with a fan. Our motherboard does have a slot for a 5.0
+                        on the front and 4.0 on the back also so if eventualy you want to get a 5.0 SSD you can move the
+                        current 4.0 to the back and put the 5.0 on the fron of the motherboard. Now for the specific SSD for
+                        Onyx the KingSpec XG7000 2TB was chosen with the help of the SSD tier list. The SSD tier list, like
+                        the PSU tier list, was created by the commuity to rate SSDs on a variaty of criteria and give them a
+                        rating from entry-level to high-end. The KingSpec XG7000 is considered a high-end SSD because of its
+                        very fast read and write speed along with having DRAM. DRAM helps with incresed speeds for drives as
+                        well as help with the lifespan of an SSD so it is very nice to have and why it was a requirment for
+                        Onyx. Normaly this type of drive would be quite expenive but it is currently on sale for about the
+                        same price as entry-level and mid-range SSDs, but may not be in the future so any high-end SSD with
+                        DRAM on sale will work. For storage amount 2TB was picked this is plenty enough for most people
+                        especialy to start, as stated earlier we have room for another NVME along with a SATA SSD if more
+                        storage is needed later.
+                    </p>
+                </div>
+            </div>
+            <div class="parts" id="Other">
+                <img src="ASSETS/Fan_Grills.jpg" alt="Two 120mm Fan Grills" />
+                <div class="parts-text">
+                    <h1>The Other Parts</h1>
+                    <p>
+                        For Onyx there are a couple of additional things that are optional for functionality and asthetics
+                        that will be listed in order of price. The first modification is actualy free, it is to remove the
+                        sticker from the motherboard back IO cover. It has been done before and is as simple as pealing it
+                        off maybe after removing they cover and applying a little heat with a hair dryer to make it easyer
+                        and then cleaing the surface after. This leaves a clean black metal cover instead of the purple and
+                        blue sticker that does not fit the asthetics of the build. The second cheapest addition would be two
+                        120mm fan grills for the raditor fans. these make sure no cables interfere with the fan blades which
+                        becomes more likely in an ITX build so they are highly recomended and are very cheap. Next is a can
+                        of All-In-One matte white spray paint for case modification. The silver version of the Lian Li
+                        A4-H20 has a black front IO cutout which crontrasts nicely with the silver but for the black version
+                        of the case that we are using the front IO cutout it stays black making the case look a little flat
+                        so the spraypaint would be used to repaint this one piece after removing it. In addition it a
+                        stensil could be used to add a logo or designs to the case for customization. Lastly custom length
+                        cables could be ordered for Onyx, these are quite expensive depening on where you get them and what
+                        type you pic but they add to both function and asthetics. For function with cables the exact lenght
+                        for the parts you have it makes cable management so much easier along with making for better airflow
+                        so lower temps. For the astheics part, white cables would help bring the build together either
+                        unsleved or the more expenive sleaved cables.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script href="JS/onyx.js"></script>
+    </body>
+</html>
