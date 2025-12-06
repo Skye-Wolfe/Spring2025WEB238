@@ -1,0 +1,175 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #222;
+    color: white;
+}
+
+.topnav .active {
+    font-size: 30px;
+    padding: 1px 15px 1px 15px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    min-height: 45px;
+}
+
+.topnav #myLinks {
+    display: block;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    padding: 12px 16px 8px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    min-height: 45px;
+    scale: 1;
+}
+
+.topnav a.icon {
+    background: black;
+    display: none;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    left: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #333;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 95%;
+    min-height: 85vh;
+    overflow: hidden;
+    margin: auto;
+    padding: 15px;
+}
+
+.content {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    place-items: center;
+}
+
+.content h1 {
+    text-align: left;
+}
+
+p {
+    padding: 10px 0;
+}
+
+img {
+    width: 100%;
+    scale: 1;
+}
+
+footer {
+    background-color: #000;
+    height: 45px;
+}
+
+footer p {
+    color: white;
+    text-align: right;
+    margin-right: 12px;
+}
+
+@media (max-width: 1070px) {
+    .topnav {
+        overflow: hidden;
+        background-color: #000;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .topnav #myLinks {
+        display: none;
+        margin-left: 0;
+        margin-top: 45px;
+    }
+
+    .topnav a {
+        float: none;
+        color: white;
+        padding: 12px 15px 8px 15px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        background-color: #333;
+        color: white;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .topnav {
+        text-align: center;
+    }
+    .topnav a.icon {
+        text-align: left;
+    }
+}
