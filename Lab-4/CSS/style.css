@@ -114,6 +114,7 @@ p {
 
 .parts img {
     width: 100%;
+    scale: 1;
 }
 
 @media (max-width: 1070px) {
@@ -168,3 +169,4 @@ p {
         text-align: center;
     }
 }
+
