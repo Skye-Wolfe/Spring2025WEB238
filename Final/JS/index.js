@@ -56,10 +56,12 @@ $(document).ready(function () {
 
   $(".content-img").hover(
     function () {
-      if ($("div." + this.id).css("display") == "grid") {
-        $(this).animate({ scale: "1.05" }, 100);
-      } else {
-        $(this).animate({ scale: ".95" }, 100);
+      if ($(window).width() > 1070) {
+        if ($("div." + this.id).css("display") == "grid") {
+          $(this).animate({ scale: "1.05" }, 100);
+        } else {
+          $(this).animate({ scale: ".95" }, 100);
+        }
       }
     },
     function () {
@@ -67,3 +69,4 @@ $(document).ready(function () {
     }
   );
 });
+
