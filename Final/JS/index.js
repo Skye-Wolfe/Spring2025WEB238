@@ -31,7 +31,7 @@ $(document).ready(function () {
   $("#myLinks")
     .children()
     .click(function () {
-      if (this.className !== highlight) {
+      if (!this.classList.contains("active")) {
         $("div." + highlight).slideToggle();
         $("a." + highlight).removeClass("active");
         $("div." + this.className).slideToggle();
@@ -69,4 +69,5 @@ $(document).ready(function () {
     }
   );
 });
+
 
