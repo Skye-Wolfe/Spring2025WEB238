@@ -23,15 +23,19 @@ $(document).ready(function () {
     }
   });
   
-  $("img").hover(
-  function () {
-    currentImage = $(this).attr("src");
-    $(this).attr("src", currentImage.substring(0, currentImage.indexOf(".")) + "_Alt" + currentImage.substring(currentImage.indexOf("."), currentImage.length));
-
-  },
-  function () {
-    $(this).attr("src", currentImage);
-  }
+  $(".content-img").hover(
+    function () {
+      if ($(window).width() > 1070) {
+        if ($("div." + this.id).css("display") == "grid") {
+          $(this).animate({ scale: "1.05" }, 100);
+        } else {
+          $(this).animate({ scale: ".95" }, 100);
+        }
+      }
+    },
+    function () {
+      $(this).animate({ scale: "1" }, 100);
+    }
   );
 });
 
@@ -43,4 +47,5 @@ function partsOrder() {
     $("main .parts:even").css("grid-template-columns", "1fr 2fr");
     $("main .parts:even .parts-text").css("order", "2");
   }
+
 }
